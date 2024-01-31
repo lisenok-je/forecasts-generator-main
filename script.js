@@ -10,7 +10,7 @@ const predictionCard = predictions[predictionRandom];
 
 const button = document.querySelector('.forecast-btn');
 const item = document.querySelector('.forecast');
-const currentForecast = document.querySelector('#forest-item');
+const currentForecast = document.querySelector('#forestcast-item');
 
 
 button.addEventListener('click', () => {
@@ -22,7 +22,7 @@ button.addEventListener('click', () => {
     item.prepend(card);
 
     function predictionMap(prediction, variations) {
-        const newCard = currentForecast.cloneNode(true);
+        const newCard = currentForecast.content.cloneNode(true);
         newCard.querySelector('h3').textContent = prediction.textContent;
         newCard.querySelector('p').textContent = variations.textContent;
       return newCard;
