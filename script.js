@@ -9,8 +9,8 @@ const predictionRandom = Math.floor(Math.random() * (predictions.length - 0) + 0
 const predictionCard = predictions[predictionRandom];
 
 const button = document.querySelector('.forecast-btn');
-const item = document.querySelector('.forecast');
-const currentForecast = document.querySelector('#forestcast-item');
+const item = document.querySelector('.forecasts');
+const currentForecast = document.querySelector('#forecast-item');
 
 
 button.addEventListener('click', () => {
